@@ -1,0 +1,13 @@
+h1 Diary
+
+b Title:
+=<@response['title']
+br
+b Entry:
+=<@response['entry']
+br
+b Date:
+=< @response['date'].to_time
+br
+=<link_to "Logout", root_path
+=<link_to "Back", user_diaries_path

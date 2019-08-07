@@ -1,0 +1,8 @@
+h1 New Diary
+
+= simple_form_for :diary, method: :post, url: user_diaries_path do |f|
+  = f.input :title
+  = f.input :entry
+  = f.button :submit
+
+=<link_to "Back", user_path(cookies[:user_id])

@@ -1,0 +1,12 @@
+h2 Diaries
+table
+  tr
+    th Title
+    th Entry
+
+  -@diaries.each do |diary|
+    tr
+      td = link_to diary['title'], user_diary_path(id: diary['id'])
+      td = diary['entry']
+
+=<link_to "Back", user_path(cookies[:user_id])

@@ -1,0 +1,7 @@
+h1 Edit Affirmation
+
+= simple_form_for :affirmation, method: :patch, url: user_affirmation_path do |f|
+  = f.input :note, input_html: { value: @affirmation['note'] }
+  = f.button :submit
+
+=<link_to "Back", user_affirmations_path

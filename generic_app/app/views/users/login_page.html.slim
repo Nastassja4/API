@@ -1,0 +1,6 @@
+h1 Login
+
+= simple_form_for :anything, method: :post, url: login_path do |f|
+  = f.input :email
+  = f.input :password
+  = f.button :submit

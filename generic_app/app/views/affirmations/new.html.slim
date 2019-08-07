@@ -1,0 +1,7 @@
+h1 New Affirmation
+
+= simple_form_for :affirmation, method: :post, url: user_affirmations_path do |f|
+  = f.input :note
+  = f.button :submit
+
+=<link_to "Back", user_path(cookies[:user_id])
